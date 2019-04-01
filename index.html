@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Juegos</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/photon.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="stylesheet" href="css/semantic.min.css" />
+
+    <!-- Javascript -->
+    <script src="js/menu.js" charset="utf-8"></script>
+    <script src="js/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+      <li>
+        <!-- Dropdown Trigger -->
+        <a class="dropdown-trigger btn-flat" href="#" data-target="fileDropDown"
+          >Archivo</a
+        >
+
+        <!-- Dropdown Structure -->
+        <ul id="fileDropDown" class="dropdown-content">
+          <li><a href="#!">Nuevo</a></li>
+          <li><a href="#!">Abrir</a></li>
+          <li><a href="#!">Guardar</a></li>
+        </ul>
+
+        <!--  -->
+        <!--  -->
+      </li>
+      <li class="divider" tabindex="-1"></li>
+      <li>
+        <!-- Dropdown Trigger -->
+        <a class="dropdown-trigger btn-flat" href="#" data-target="TypeDropDown"
+          >HTML</a
+        >
+
+        <!-- Dropdown Structure -->
+        <ul id="TypeDropDown" class="dropdown-content">
+          <li><a href="#!">HTML</a></li>
+          <li><a href="#!">JS</a></li>
+          <li><a href="#!">CSS</a></li>
+        </ul>
+
+        <!--  -->
+        <!--  -->
+      </li>
+      <li>
+        <!-- Dropdown Trigger -->
+        <a class="dropdown-trigger btn-flat" href="#" data-target="AddDropDown"
+          >Agregar</a
+        >
+
+        <!-- Dropdown Structure -->
+        <ul id="AddDropDown" class="dropdown-content">
+          <li><a href="#!">Nuevo Archivo</a></li>
+          <li><a href="#!">Archivo Existente</a></li>
+          <li><a href="#!">Libreria</a></li>
+        </ul>
+
+        <!--  -->
+        <!--  -->
+      </li>
+    </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger navButton"
+      ><img src="assets/Button.png" class="navButton"
+    /></a>
+  </body>
+  <script>
+    // You can also require other files to run in this process
+    require("./renderer.js");
+    var app = require("electron").remote;
+    var dialog = app.dialog;
+    const fs = require("fs"); // Load the File System to execute our common tasks (CRUD)
+
+    swal("BIenvenidos al Aguacate", "Hecho por Esteban Devia");
+  </script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/semantic.min.js"></script>
+  <script src="js/gestor.js"></script>
+  <script src="js/gux.js"></script>
+  <script src="js/fileSource.js"></script>
+  <script src="js/motor.js"></script>
+  <script>
+    M.AutoInit();
+  </script>
+</html>

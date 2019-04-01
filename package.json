@@ -1,0 +1,27 @@
+{
+  "name": "Appvocado",
+  "version": "1.0.0",
+  "description": "Programa para crear Apps",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/yosoyrolo/Appvocado",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Esteban Devia",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^4.0.4"
+  },
+  "dependencies": {
+    "dialog": "^0.3.1",
+    "fs": "0.0.1-security",
+    "remote": "^0.2.6"
+  }
+}

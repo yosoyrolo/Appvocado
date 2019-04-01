@@ -1,0 +1,19 @@
+.closed {
+  height: 0 !important;
+}
+
+.lista-animada {
+  height: auto;
+  overflow: hidden;
+  background-color: #dcdfe1;
+}
+
+.hidden {
+  visibility: hidden !important;
+}
+
+.navButton {
+  position: absolute;
+  top: 16px;
+  width: 64px;
+}
